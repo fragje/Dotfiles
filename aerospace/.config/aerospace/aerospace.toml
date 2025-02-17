@@ -192,7 +192,7 @@ alt-shift-l = ['join-with right', 'mode main']
     run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
-    if.app-id = 'om.microsoft.teams2'
+    if.app-id = 'com.microsoft.teams2'
     run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
