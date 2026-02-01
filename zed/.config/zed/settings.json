@@ -1,0 +1,106 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "format_on_save": "off",
+  "context_servers": {
+    "lighthouse": {
+      "enabled": false,
+      "command": "npx",
+      "args": [
+        "@danielsogl/lighthouse-mcp@latest"
+      ]
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "default_minimum_tokens": "10000"
+      }
+    }
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-thinking-latest"
+    },
+  },
+  "theme": {
+    "mode": "system",
+    "dark": "Night Owl Dark",
+    "light": "Night Owl Light"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Latte"
+  },
+  "buffer_font_size": 18,
+  "buffer_font_family": "MonoLisa",
+  "vim_mode": true,
+  "terminal": {
+    "font_family": "MesloLGS NF"
+  },
+  "toolbar": {
+    "breadcrumbs": true
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "indent_guides": {
+    /// Whether to show indent guides in the editor.
+    "enabled": false,
+    /// The width of the indent guides in pixels, between 1 and 10.
+    "line_width": 1,
+    /// The width of the active indent guide in pixels, between 1 and 10.
+    "active_line_width": 2,
+    /// Determines how indent guides are colored.
+    /// This setting can take the following three values:
+    ///
+    /// 1. "disabled"
+    /// 2. "fixed"
+    /// 3. "indent_aware"
+    "coloring": "fixed",
+    /// Determines how indent guide backgrounds are colored.
+    /// This setting can take the following two values:
+    ///
+    /// 1. "disabled"
+    /// 2. "indent_aware"
+    "background_coloring": "disabled"
+  },
+  "show_whitespaces": "all",
+  "base_keymap": "VSCode",
+  "tab_size": 2,
+  "project_panel": {
+    "dock": "left",
+    "folder_icons": false,
+    "indent_size": 20,
+    "auto_fold_dirs": false,
+    "scrollbar": {
+      "show": "never"
+    },
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+  "file_types": {
+    "PHP": ["*.module", "*.theme", "*.php"]
+  }
+}
