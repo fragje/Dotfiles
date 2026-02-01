@@ -3,3 +3,4 @@ theme = dark:NightOwlDark,light:NightOwlLight
 # Allow Cmd+S to be passed to the application
 keybind = super+s=unbind
 keybind = shift+enter=text:\x1b\r
+term = xterm-256color
